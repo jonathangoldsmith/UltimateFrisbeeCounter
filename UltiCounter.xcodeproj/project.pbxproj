@@ -11,6 +11,10 @@
 		B8AE8D4C279E2BE2007CFC7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE8D4B279E2BE2007CFC7C /* ContentView.swift */; };
 		B8AE8D4E279E2BE6007CFC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AE8D4D279E2BE6007CFC7C /* Assets.xcassets */; };
 		B8AE8D51279E2BE6007CFC7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AE8D50279E2BE6007CFC7C /* Preview Assets.xcassets */; };
+		B8AE8D58279E3037007CFC7C /* TextToTalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE8D57279E3037007CFC7C /* TextToTalkViewModel.swift */; };
+		B8AE8D5A279E3350007CFC7C /* ScoreCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE8D59279E3350007CFC7C /* ScoreCounterView.swift */; };
+		B8AE8D5C279E5DA3007CFC7C /* CallMadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE8D5B279E5DA3007CFC7C /* CallMadeView.swift */; };
+		B8AE8D5E279E5F35007CFC7C /* StallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE8D5D279E5F34007CFC7C /* StallViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		B8AE8D4B279E2BE2007CFC7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8AE8D4D279E2BE6007CFC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AE8D50279E2BE6007CFC7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8AE8D57279E3037007CFC7C /* TextToTalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToTalkViewModel.swift; sourceTree = "<group>"; };
+		B8AE8D59279E3350007CFC7C /* ScoreCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCounterView.swift; sourceTree = "<group>"; };
+		B8AE8D5B279E5DA3007CFC7C /* CallMadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallMadeView.swift; sourceTree = "<group>"; };
+		B8AE8D5D279E5F34007CFC7C /* StallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StallViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				B8AE8D49279E2BE2007CFC7C /* UltiCounterApp.swift */,
 				B8AE8D4B279E2BE2007CFC7C /* ContentView.swift */,
+				B8AE8D57279E3037007CFC7C /* TextToTalkViewModel.swift */,
+				B8AE8D59279E3350007CFC7C /* ScoreCounterView.swift */,
+				B8AE8D5B279E5DA3007CFC7C /* CallMadeView.swift */,
+				B8AE8D5D279E5F34007CFC7C /* StallViewModel.swift */,
 				B8AE8D4D279E2BE6007CFC7C /* Assets.xcassets */,
 				B8AE8D4F279E2BE6007CFC7C /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8AE8D4C279E2BE2007CFC7C /* ContentView.swift in Sources */,
+				B8AE8D5E279E5F35007CFC7C /* StallViewModel.swift in Sources */,
 				B8AE8D4A279E2BE2007CFC7C /* UltiCounterApp.swift in Sources */,
+				B8AE8D5A279E3350007CFC7C /* ScoreCounterView.swift in Sources */,
+				B8AE8D58279E3037007CFC7C /* TextToTalkViewModel.swift in Sources */,
+				B8AE8D5C279E5DA3007CFC7C /* CallMadeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltiCounter/Preview Content\"";
@@ -277,12 +294,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JCG.UltiCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = jcg.ulticounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltiCounter/Preview Content\"";
@@ -306,12 +325,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JCG.UltiCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = jcg.ulticounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
