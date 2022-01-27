@@ -11,6 +11,8 @@ struct ScoreCounterView: View {
   @ObservedObject var countViewModel: CountViewModel
   @ObservedObject var otherTeamViewModel: CountViewModel
   @ObservedObject var textToTalkViewModel: TextToTalkViewModel
+  let teamName: String
+  let otherTeamName: String
   
   var body: some View {
     VStack {
@@ -20,19 +22,24 @@ struct ScoreCounterView: View {
           if countViewModel.counter > 0 {
             countViewModel.counter -= 1
           }
-          textToTalkViewModel.speak(text: "Score: \(countViewModel.counter) to \(otherTeamViewModel.counter)")
+          textToTalkViewModel.speakScore(teamOne: teamName,
+                                         teamOneScore: countViewModel.counter,
+                                         teamTwo: otherTeamName,
+                                         teamTwoScore: otherTeamViewModel.counter)
         } label: {
           Image(systemName: "minus.square")
         }
         Spacer().frame(width: 30)
         Button {
           countViewModel.counter += 1
-          textToTalkViewModel.speak(text: "Score: \(countViewModel.counter) to \(otherTeamViewModel.counter)")
+          textToTalkViewModel.speakScore(teamOne: teamName,
+                                         teamOneScore: countViewModel.counter,
+                                         teamTwo: otherTeamName,
+                                         teamTwoScore: otherTeamViewModel.counter)
         } label: {
           Image(systemName: "plus.square")
         }
       }
     }
-    
   }
 }
